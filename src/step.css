@@ -1,0 +1,238 @@
+/* alistyle.step 样式模块 */
+
+.ali-step {
+    padding: 0 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    list-style: none;
+    zoom: 1;
+    position: relative;
+    color: #b7b7b7;
+    overflow: hidden;
+}
+
+.ali-step:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.ali-step li {
+    float: left;
+    height: 54px;
+    margin: 0;
+    width: 50%;
+    position: relative;
+}
+
+.ali-step li .ali-step-icon {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    text-align: center;
+    left: -25px;
+    font-family: tahoma;
+}
+
+.ali-step-icon .ali-step-bg{
+    display: block;
+    background: #b7b7b7;
+    background: rgba(0, 0, 0, 0.25);
+    *background: #b7b7b7;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.ali-step-icon .iconfont {
+    font-size: 30px;
+    margin: 0;
+    color: #b7b7b7;
+    color: rgba(0, 0, 0, 0.25);
+    *color: #b7b7b7;
+    line-height: 30px;
+    background: #fff;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-shadow: 1px 1px 2px #fff, 0 0 0 #ccc, 1px 1px 2px #fff;
+}
+
+.ali-step-icon .ali-step-number {
+    line-height:14px;
+    font-style:normal;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    padding: 0 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ali-step .ali-step-active i.ali-step-number {
+    color:#FFF;
+}
+
+.ali-step-end .ali-step-number {
+    background: transparent;
+    font-size: 12px;
+    font-style: normal;
+    left: 17px;
+    line-height: 12px;
+    padding: 0;
+    text-shadow: none;
+    top: 9px;
+}
+
+.ali-step-icon .ali-step-text {
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    text-shadow: 0 1px 0 white;
+    top: 34px;
+    left: -50px;
+}
+
+.ali-step li .ali-step-line {
+    height: 3px;
+    background: #b9b9b9;
+    display: block;
+    margin: 14px 25px 0 25px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.ali-step li.ali-step-end {
+    position: absolute;
+    top: 0;
+    right: -110px;
+    width: 150px;
+    zoom: 1;
+    _clear: both;   /* 修复ie6下最后一步莫名其妙显示不出来的问题 */
+}
+
+.ali-step li.ali-step-end .ali-step-line {
+    display: none;
+}
+
+/* 步骤长度 */
+
+.ali-step-2 li {
+    width: 100%;
+}
+
+.ali-step-3 li {
+    width: 50%;
+}
+
+.ali-step-4 li {
+    width: 33%;
+}
+
+.ali-step-5 li {
+    width: 25%;
+}
+
+/* 修改颜色 */
+
+.ali-step .ali-step-active {
+    color: #f16f20;
+}
+
+.ali-step .ali-step-active .ali-step-bg {
+    background: #ff7001;
+}
+
+.ali-step .ali-step-done .ali-step-bg {
+    background: #ff9a00;
+}
+
+.ali-step .ali-step-done .ali-step-line {
+    background: #fc9c27;
+}
+
+.ali-step-blue .ali-step-active {
+    color: #3b7cb8;
+}
+.ali-step-blue .ali-step-active .ali-step-bg {
+    background: #1e6bb3;
+}
+.ali-step-blue .ali-step-done .ali-step-bg {
+    background: #428fd6;
+}
+.ali-step-blue .ali-step-done .ali-step-line {
+    background: #418cd6;
+}
+
+/* ministep */
+.ali-ministep {
+    list-style: none;
+    font-size: 12px;
+    font-family: tahoma;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #b7b7b7;
+}
+
+.ali-ministep-item {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 36px;
+}
+
+.ali-ministep .iconfont {
+    color: #b7b7b7;
+    font-size: 18px;
+}
+
+.ali-ministep .ali-step-bg {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #b7b7b7;
+    background: rgba(0, 0, 0, 0.25);
+    *background: #b7b7b7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.ali-ministep .ali-ministep-number {
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    color: #fff;
+    line-height: 12px;
+    font-style: normal;
+}
+
+.ali-ministep .ali-ministep-text {
+    position: relative;
+    top: -2px;
+    left: 20px;
+}
+
+.ali-ministep-active{
+    color: #FF6700;
+}
+.ali-ministep-active .ali-step-bg {
+    background: #FF6700;
+}

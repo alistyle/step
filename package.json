@@ -1,0 +1,20 @@
+{
+  "name": "step",
+  "description": "alibaba css theme - step",
+  "version": "1.0.1",
+  "homepage": "https://github.com/alistyle/step",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alistyle/step.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alistyle/step/issues"
+  },
+  "family": "alistyle",
+  "spm": {
+    "alias": {},
+    "output": [
+      "step.css"
+    ]
+  }
+}
